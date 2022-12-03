@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'base.apps.BaseConfig',
-    # 'rest_framework_simplejwt',
+    'rest_framework_simplejwt', #dont work here
     'rest_framework',
     'rest_framework_simplejwt.token_blacklist',
     "corsheaders",
@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt',
+        # 'rest_framework_simplejwt', dont work here
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
